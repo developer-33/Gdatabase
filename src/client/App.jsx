@@ -1,5 +1,5 @@
 import { useState,useEffect} from 'react';
-import MainSection from './components/Mainsection';
+import Mainsection from './components/Mainsection';
 import  Example from './components/NavBar'
 
 import "./index.css"
@@ -30,7 +30,7 @@ function App() {
         Toggle Dark Mode
       </button> */}
       <Example isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
-      <MainSection />
+      <Mainsection />
     </div>
   );
 }
