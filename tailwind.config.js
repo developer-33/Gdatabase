@@ -19,7 +19,7 @@ export default {
     "./src/**/*.png",
     "./src/**/*.jpg",
     "./src/**/*.jpeg",
-
+  "./node_modules/flowbite/**/*.js",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
@@ -28,7 +28,7 @@ export default {
     },
 
  plugins: [
-
+  require('flowbite/plugin')
  ],
 },
 }

@@ -1,12 +1,17 @@
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
+
+
 import "../index.css"
 const navigation = [ 
   { name: 'login', href: '/login', current: false },
-  { name: 'Home', href: '/home', current: true },
+  { name: 'Home', href: '/home', current: false },
   { name: 'News', href: '/News', current: false },
   { name: 'GunDisplay', href: '/gundisplay', current: false },
   { name: 'AdminDashBoard', href: '/admindashboard', current: false },
+  // { name: 'Card', href: '/card', current: false },
  
 ]
 
@@ -14,19 +19,31 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example({ isDarkMode, toggleDarkMode }) {
+export default function NavBar({ isDarkMode, toggleDarkMode }) {
   return (
-    <Disclosure as="nav" className="bg-yellow-400 dark:bg-black" >
+
+
+    <Disclosure as="nav" className="
+    bg-yellow-400
+     dark:bg-black
+  
+      dark:text-yellow-400"
+      >
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* Mobile menu button*/}
-            <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-black
-             dark:text-yellow-400
-              hover:bg-gray-700
-               hover:text-white focus:outline-none
+            <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2
+              bg-yellow-400
+               dark:bg-black
+                text-black
+                 dark:text-yellow-400  
+           
+           
+          
+               hover:text-yellow-400 focus:outline-none
                 focus:ring-2 focus:ring-inset
-                 focus:ring-white">
+                 focus:ring-yellow-400">
               <span className="absolute -inset-0.5" />
               <span className="sr-only">Open main menu</span>
               <Bars3Icon aria-hidden="true" className="block h-6 w-6 group-data-[open]:hidden" />
@@ -41,28 +58,21 @@ export default function Example({ isDarkMode, toggleDarkMode }) {
 
                 className="h-8 w-auto"
               />
-
-              {/* Dark Mode */}
-
-
-
-         {/* <nav className="flex items-center justify-between p-4 bg-white dark:bg-gray-800 text-black dark:text-white"> */}
-      
-              <div className="text-2xl font-bold">
-        <button 
-        onClick={toggleDarkMode} 
-        className="p-2 bg-gray-200 dark:bg-gray-700 text-black dark:text-white"
-      >
-        {isDarkMode ? 'Light Mode' : 'Dark Mode'}
-      </button>
-      </div>
-            </div>
-         {/* </nav> */}   
-
-
+                    <div className="text-2xl font-bold">
+    <button 
+    onClick={toggleDarkMode} 
+    className="p-2 bg-yellow-400
+     dark:bg-black
+      text-black
+       dark:text-yellow-400"
+  >
+    <FontAwesomeIcon icon={isDarkMode ? faSun : faMoon} className="mr-2" />
+    {isDarkMode ? '' : ''}
+  </button>
+  </div>
             {/* End of Dark Mode */}
 
-     
+            </div>
    
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
@@ -72,8 +82,8 @@ export default function Example({ isDarkMode, toggleDarkMode }) {
                     href={item.href}
                     aria-current={item.current ? 'page' : undefined}
                     className={classNames(
-                      item.current ? 'bg-black text-yellow-400' : 'text-black hover:bg-black hover:text-yellow-400',
-                      'rounded-md px-3 py-2 text-sm font-medium',
+                      item.current ? 'bg-yellow-400 text-yellow-400' : 'text-black dark:text-yellow-400 hover:bg-black hover:text-yellow-400',
+                      'rounded-md px-12 py-2 text-md font-large',
                     )}
                   >
                     {item.name}
@@ -85,16 +95,17 @@ export default function Example({ isDarkMode, toggleDarkMode }) {
           <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
             <button
               type="button"
-              className="relative rounded-full bg-yellow-400 p-1 text- hover:text-white focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-offset-2 focus:ring-offset-black focus"
+              className="relative rounded-full bg-yellow-400 dark:bg-black p-1 text-black dark:text-yellow-400  hover:text-black focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-offset-2 focus:ring-offset-black focus"
             >
               <span className="absolute -inset-1.5" />
               <span className="sr-only">View notifications</span>
               <BellIcon aria-hidden="true" className="h-6 w-6" />
             </button>
-
+              
             {/* Profile dropdown */}
             <Menu as="div" className="relative ml-3">
               <div>
+              
                 <MenuButton className="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                   <span className="absolute -inset-1.5" />
                   <span className="sr-only">Open user menu</span>
@@ -107,22 +118,30 @@ export default function Example({ isDarkMode, toggleDarkMode }) {
               </div>
               <MenuItems
                 transition
-                className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
+                className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md  bg-yellow-400 dark:bg-black p-1 text-black dark:text-yellow-400   py-1 shadow-lg ring-1 ring-black ring-opacity-5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
               >
                 <MenuItem>
-                  <a href="#" className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100">
+                  <a href="#" className="block px-4 py-2 text-sm  bg-yellow-400 dark:bg-black p-1 text-black dark:text-yellow-400  ">
                     Your Profile
                   </a>
                 </MenuItem>
                 <MenuItem>
-                  <a href="#" className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100">
+                  <a href="#" className="block px-4 py-2 text-sm  bg-yellow-400 dark:bg-black p-1 text-black dark:text-yellow-400  ">
                     Settings
                   </a>
                 </MenuItem>
                 <MenuItem>
-                  <a href="#" className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100">
+                  <a href="#" className="block px-4 py-2 text-sm  bg-yellow-400 dark:bg-black p-1 text-black dark:text-yellow-400  ">
                     Sign out
                   </a>
+
+
+             
+
+
+
+
+                  
                 </MenuItem>
               </MenuItems>
             </Menu>
@@ -139,13 +158,22 @@ export default function Example({ isDarkMode, toggleDarkMode }) {
               href={item.href}
               aria-current={item.current ? 'page' : undefined}
               className={classNames(
-                item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                item.current ? 'bg-yellow-400 text-black' : 'dark:bg-black dark:text-yellow-300 hover:bg-gray-700 hover:text-white',
                 'block rounded-md px-3 py-2 text-base font-medium',
               )}
             >
               {item.name}
             </DisclosureButton>
           ))}
+
+
+
+
+
+
+
+
+          
         </div>
       </DisclosurePanel>
     </Disclosure>

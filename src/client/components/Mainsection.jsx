@@ -5,20 +5,24 @@ import GunDisplay from './GunDisplay';
 import News from './News';
 import AdminDashboard from './AdminDashboard';
 import HomePage from './HomePage';
+// import Carousel from './Carousel';
+// import Card from './card';
 
-const Mainsection = ({ token, setToken, admin, setAdmin, user, setUser}) => {
+const Mainsection = ( {toggleDarkMode }) => {
  
 
 
     return (
         <div>
         <Routes>
-          <Route path="/home" element={<HomePage />} />
-          <Route  path="/login" element={<SignIn  token={token} setToken={setToken} />}  /> 
+          <Route path="/home" element={<HomePage toggleDarkMode />} />
+          <Route  path="/login" element={<SignIn toggleDarkMode/>}  /> 
 
-          <Route  path="/gundisplay" element={<GunDisplay token={token} setToken={setToken}  />} />
-            <Route  path="/News"element={<News token={token} user={user} />}   />
-             <Route path="/admindashboard" element={<AdminDashboard  token={token} user={user} />}   />
+          <Route  path="/gundisplay" element={<GunDisplay toggleDarkMode />} />
+            <Route  path="/News"element={<News toggleDarkMode/> } />
+             <Route path="/admindashboard" element={<AdminDashboard  toggleDarkMode/>}   />
+             {/* <Route path="/card" element={<Card toggleDarkMode/>}   /> */}
+             {/* <Route path="/Carousel" element={<Carousel toggleDarkMode/>}   /> */}
           
           
           {/* <Route path="/success" element={<Success />} />
@@ -38,10 +42,11 @@ const Mainsection = ({ token, setToken, admin, setAdmin, user, setUser}) => {
             
       
     </Routes>
-  
+       
             
     </div>
- 
+   
+
   )
 }
 

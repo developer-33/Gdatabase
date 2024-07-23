@@ -1,21 +1,14 @@
+import React from 'react'
 
-import { CLink } from "@coreui/react";
-import {CFooter} from '@coreui/react';
-function Footer ()  {
-  return (
-    
-   <CFooter>
-  <div>
-    <CLink href="ht">CoreUI</CLink>
-    <span>&copy; 2024 creativeLabs.</span>
-  </div>
-  <div>
-    <span>Powered by</span>
-    <CLink href="https://coreui.io">Burto nCreations</CLink>
-  </div>
-</CFooter>
+ 
+    export default function Pic() {
+      return (
+        <img
+          className="h-96 w-full rounded-lg object-cover object-center shadow-xl shadow-blue-gray-900/50"
+          src="/src/client/assets/call4.jpg"
+          alt="nature image"
+        />
+      );
+    }
 
-  )
-}
-
-export default Footer
+  

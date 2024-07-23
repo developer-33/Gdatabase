@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 
 
 
+
 // <div
 // className="h-screen bg-cover bg-center"
 // style={{ backgroundImage: `url(${heroBackgroundImage})` }}
@@ -12,11 +13,12 @@ import React, { useState } from 'react';
 
 
 const SignIn = () => {
+
   const heroBackgroundImage2 = '/src/client/assets/call13.jpg';
   return (
     <section className ="h-screen bg-cover bg-center"style={{ backgroundImage: `url(${heroBackgroundImage2})` }} >
       <div className="flex flex-col
-      items-center
+      items-center 
  
       justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
         <a href="/home" className="flex items-center mb-6 text-4xl font-semibold text-white dark:text-yellow-400">
@@ -44,7 +46,7 @@ const SignIn = () => {
 
                 <input type="password" name="password" id="password" placeholder="••••••••" className="bg-white border border-yellow-400 text-black rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-black dark:border-yellow-400 dark:placeholder-yellow-400 dark:text-yellow-400 dark:focus:ring-black dark:focus:border-black" required />
               </div>
-
+              
               {/* Remember me */}
               <div className="flex items-center justify-between">
                 <div className="flex items-start">
