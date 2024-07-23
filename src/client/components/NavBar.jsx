@@ -11,7 +11,7 @@ const navigation = [
   { name: 'News', href: '/News', current: false },
   { name: 'GunDisplay', href: '/gundisplay', current: false },
   { name: 'AdminDashBoard', href: '/admindashboard', current: false },
-  // { name: 'Card', href: '/card', current: false },
+  { name: 'Grid', href: '/allguns', current: false },
  
 ]
 

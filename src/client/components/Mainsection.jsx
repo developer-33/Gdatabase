@@ -6,7 +6,8 @@ import News from './News';
 import AdminDashboard from './AdminDashboard';
 import HomePage from './HomePage';
 // import Carousel from './Carousel';
-// import Card from './card';
+
+import Grid from './AllGuns'
 
 const Mainsection = ( {toggleDarkMode }) => {
  
@@ -21,7 +22,7 @@ const Mainsection = ( {toggleDarkMode }) => {
           <Route  path="/gundisplay" element={<GunDisplay toggleDarkMode />} />
             <Route  path="/News"element={<News toggleDarkMode/> } />
              <Route path="/admindashboard" element={<AdminDashboard  toggleDarkMode/>}   />
-             {/* <Route path="/card" element={<Card toggleDarkMode/>}   /> */}
+             <Route path="/allguns" element={<Grid toggleDarkMode/>}   />
              {/* <Route path="/Carousel" element={<Carousel toggleDarkMode/>}   /> */}
           
           
