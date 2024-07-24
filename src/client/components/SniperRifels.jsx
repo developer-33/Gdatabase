@@ -2,7 +2,7 @@
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 // Assuming Item is a styled Paper component from MUI
-import GunCard from './GunCard'; // Adjust the import path according to your project structure
+import GunCard from './MarksMan'; // Adjust the import path according to your project structure
 
 function ResponsiveGridWithMoreCards() {
   const gunCards = Array.from({ length: 26 }, (_, index) => (

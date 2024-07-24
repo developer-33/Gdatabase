@@ -9,9 +9,10 @@ const navigation = [
   { name: 'login', href: '/login', current: false },
   { name: 'Home', href: '/home', current: false },
   { name: 'News', href: '/News', current: false },
-  { name: 'GunDisplay', href: '/gundisplay', current: false },
+  { name: 'Sniper', href: '/sniper', current: false },
   { name: 'AdminDashBoard', href: '/admindashboard', current: false },
-  { name: 'Grid', href: '/allguns', current: false },
+  { name: 'Assault', href: '/assault', current: false },
+  { name: 'MarksMan', href: '/marksman', current: false },
  
 ]
 

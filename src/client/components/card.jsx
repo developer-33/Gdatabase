@@ -1,28 +1,80 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
-const Card1 = ({ imageSrc, title, description,link }) => {
+const Card1 = ({ imageSrc, title, description,link,type }) => {
+    const navigate = useNavigate();
 
         return (
-            <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-               <a href={link}>
+            <div className="max-w-sm
+             bg-yellow-400
+              border-black
+              rounded-lg shadow
+               dark:bg-black
+                dark:border-white">
+               <a href={link} onClick={(e) =>{
+                e.preventDefault();
+                navigate("/image", {state:{imageSrc, title} })
+                }}>
+              <img className=
+              "rounded-t-lg "
+               src={imageSrc} alt={title} />
                
-                    <img className="rounded-t-lg" src={imageSrc} alt={title} />
+                  
                 </a>
+
+
+                
+
+
+                 
+
+
+
+                
+
+
+
+
+
                 <div className="p-5">
-                    <a href="#">
-                        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    {/* <a href="#"> */}
+                        <h5 className="mb-2 text-2xl font-bold tracking-tight
+                         text-black
+                          dark:text-yellow-400">
                             {title}
                         </h5>
-                        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        <h5 className="mb-2 text-2xl font-bold tracking-tight
+                          text-white
+                           dark:text-yellow-400">
                     
                         </h5>
-                    </a>
-                    <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                    {/* </a> */}
+                    <p className="mb-3 font-normal 
+                     text-black
+                      dark:text-yellow-400">
                         {description}
+                    </p>
+                    <p className="mb-3 font-normal 
+                     text-black
+                      dark:text-yellow-400">
+                        {type}
                     </p>
                     <a 
                         href="#" 
-                        className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                        className="inline-flex items-center px-3 py-2 text-sm font-medium text-center
+                        // text light
+                         text-black
+                          bg-yellow-400 rounded-lg
+                           border-white
+                            hover:bg-black focus:ring-4
+                             focus:outline-black
+                            hover:text-yellow-400
+                            focus:ring-white
+                             dark:border-white
+                             dark:bg-yellow-400
+                              dark:hover:bg-black
+                              dark:hover:text-yellow-400
+                               dark:focus:ring-white"
                     >
                         Read more
                         <svg 

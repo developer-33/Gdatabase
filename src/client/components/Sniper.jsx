@@ -1,8 +1,8 @@
 import React from 'react'
-import ResponsiveGridWithMoreCards from './Combined';
+import ResponsiveGridWithMoreCards from './SniperRifels';
 
 
- function GunDisplay () {
+ function SniperGuns () {
   return (
     <div className='container'>
     <ResponsiveGridWithMoreCards />
@@ -10,4 +10,4 @@ import ResponsiveGridWithMoreCards from './Combined';
   )
 }
 
-export default GunDisplay
+export default SniperGuns
