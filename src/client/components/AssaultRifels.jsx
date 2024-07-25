@@ -60,7 +60,7 @@ const CardData = [
     },
   
     {
-        imageSrc: '/sr/guns/hvk-30.png',
+        imageSrc: '/src/guns/hvk-30.png',
         title: 'Final tech acquisition',
         description: 'Details about the final significant acquisition of 2021.',
         link: '/src/guns/hvk-30.png',
