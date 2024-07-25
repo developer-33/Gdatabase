@@ -1,6 +1,6 @@
 [build]
   command = "vite build"
-  publish = "/home/fletcher/callDuty/call77/index.html"
+  publish = "dist/vite"
 
 
 
