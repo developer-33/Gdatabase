@@ -28,7 +28,7 @@ const CardData = [
   
     {
         imageSrc: '/src/guns/BK57.PNG',
-        title: 'Final tech acquisition',
+        title: 'BK57',
         description: 'Assult Rifle.',
         link: '/src/guns/BK57.PNG',
         type: 'Type: Assault Rifle',
@@ -45,7 +45,7 @@ const CardData = [
   
     {
         imageSrc: '/src/guns/fr.556.png',
-        title: 'Final tech acquisition',
+        title: 'FR.556',
         description: 'Assult Rifle.',
         link: '/src/fr.556.png',
         type: 'Type: Assault Rifle',
@@ -53,7 +53,7 @@ const CardData = [
   
     {
         imageSrc: '/src/guns/hbra3.png',
-        title: 'Final tech acquisition',
+        title: 'HBRA3',
         description: 'Assult Rifle.',
         link: '/src/guns/hbra3.png',
         type: 'Type: Assault Rifle',
@@ -61,7 +61,7 @@ const CardData = [
   
     {
         imageSrc: '/src/guns/hvk-30.png',
-        title: 'Final tech acquisition',
+        title: 'HVK 30',
         description: 'Details about the final significant acquisition of 2021.',
         link: '/src/guns/hvk-30.png',
         type: 'Type: Assault Rifle',
@@ -69,7 +69,7 @@ const CardData = [
   
     {
         imageSrc: '/src/guns/ICR-1.PNG',
-        title: 'Final tech acquisition',
+        title: 'ICR-1',
         description: 'Details about the final significant acquisition of 2021.',
         link: '/src/guns/ICR-1.PNG',  
         type: 'Type: Assault Rifle',
@@ -77,7 +77,7 @@ const CardData = [
   
     {
         imageSrc: '/src/guns/kn44.png',
-        title: 'Final tech acquisition',
+        title: 'KN44',
         description: 'Details about the final significant acquisition of 2021.',
         link: '/src/guns/kn44.png',
         type: 'Type: Assault Rifle',
@@ -85,7 +85,7 @@ const CardData = [
   
     {
         imageSrc: '/src/guns/LK24.PNG',
-        title: 'Final tech acquisition',
+        title: 'LK24',
         description: 'Details about the final significant acquisition of 2021.',
         link: '/src/guns/LK24.PNG',
         type: 'Type: Assault Rifle',
@@ -94,7 +94,7 @@ const CardData = [
   
     {
         imageSrc: '/src/guns/M16.PNG',
-        title: 'Final tech acquisition',
+        title: 'M16',
         description: 'Details about the final significant acquisition of 2021.',
         link: '/src/guns/M16.PNG',
         type: 'Type: Assault Rifle',
@@ -102,7 +102,7 @@ const CardData = [
   
     {
         imageSrc: '/src/guns/M4.PNG',
-        title: 'Final tech acquisition',
+        title: 'M4',
         description: 'Details about the final significant acquisition of 2021.',
         link: '/src/guns/M4.PNG',
          type: 'Type: Assault Rifle',
@@ -110,14 +110,14 @@ const CardData = [
   
     {
         imageSrc: '/src/guns/man0war.png',
-        title: 'Final tech acquisition',
+        title: 'Man-O-War',
         description: 'Details about the final significant acquisition of 2021.',
         link: '/src/guns/man0war.png',
         type: 'Type: Assault Rifle',
     },
     {
         imageSrc: '/src/guns/Type25.PNG',
-        title: 'Final tech acquisition',
+        title: 'Type25',
         description: 'Details about the final significant acquisition of 2021.',
         link: '/src/guns/Type25.PNG',
         type: 'Type: Assault Rifle',
