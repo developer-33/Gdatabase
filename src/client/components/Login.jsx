@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-
+import loginLogo from "../assets/call13.jpg" 
 
 
 
@@ -14,7 +14,7 @@ import React, { useState } from 'react';
 
 const SignIn = () => {
 
-  const heroBackgroundImage2 = '/src/guns/call13.jpg';
+  const heroBackgroundImage2 = loginLogo
   return (
     <section className ="h-screen bg-cover bg-center"style={{ backgroundImage: `url(${heroBackgroundImage2})` }} >
       <div className="flex flex-col

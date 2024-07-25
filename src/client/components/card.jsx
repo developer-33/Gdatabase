@@ -13,7 +13,7 @@ const Card1 = ({ imageSrc, title, description,link,type }) => {
                 dark:border-white">
                <a href={link} onClick={(e) =>{
                 e.preventDefault();
-                navigate("/image", {state:{imageSrc, title} })
+                navigate("/src/client/assets/", {state:{imageSrc, title} })
                 }}>
               <img className=
               "rounded-t-lg "

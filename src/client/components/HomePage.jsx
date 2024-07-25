@@ -1,10 +1,10 @@
 
 import React from "react";
- 
+ import warzone from "../assets/warzonw1.jpg"
    
 const HomePage = () => {
  
-  const footerBackgroundImage = '/src/guns/warzonw1.jpg';
+  const footerBackgroundImage = warzone;
 
  
 

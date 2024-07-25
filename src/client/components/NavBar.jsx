@@ -2,7 +2,7 @@ import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuIt
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
-
+import navBarLogo from "../assets/callLogo.png"
 
 import "../index.css"
 const navigation = [ 
@@ -55,7 +55,7 @@ export default function NavBar({ isDarkMode, toggleDarkMode }) {
             <div className="flex flex-shrink-0 items-center">
               <img
                 alt="Your Company"
-                src="/src/guns/callLogo.png"
+                src= {navBarLogo}
 
                 className="h-8 w-auto"
               />

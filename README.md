@@ -9,3 +9,18 @@ Currently, two official plugins are available:
 # Gdatabase
 
 
+// import { viteStaticCopy } from 'vite-plugin-static-copy';
+
+ export default defineConfig({
+//   plugins: [
+//     viteStaticCopy({
+//       targets: [
+//         {
+//           src: '/public/*', // Adjust this path to your assets folder
+//           dest: 'assets/images'
+//         }
+//       ]
+//     })
+//   ],
+//   assetsInclude: ['**/*.png', '**/*.PNG', '**/*.jpeg', '**/*.jpg','**/*.webp', ]
+// });

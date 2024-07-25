@@ -1,8 +1,8 @@
 import React from 'react'
-   
+import call2 from "../assets/call2.webp"
 const News = () => {
 
- const heroBackgroundImage = '/src/guns/call2.webp';
+ const heroBackgroundImage = call2;
  
 
   return (
