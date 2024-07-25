@@ -2,7 +2,7 @@ import React from 'react'
    
 const News = () => {
 
- const heroBackgroundImage = '/src/client/assets/call2.webp';
+ const heroBackgroundImage = '/src/guns/call2.webp';
  
 
   return (

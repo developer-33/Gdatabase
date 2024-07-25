@@ -4,7 +4,7 @@ import React from "react";
    
 const HomePage = () => {
  
-  const footerBackgroundImage = '/src/client/assets/call1.jpeg';
+  const footerBackgroundImage = '/src/guns/warzonw1.jpg';
 
  
 

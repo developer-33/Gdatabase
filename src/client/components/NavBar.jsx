@@ -55,7 +55,7 @@ export default function NavBar({ isDarkMode, toggleDarkMode }) {
             <div className="flex flex-shrink-0 items-center">
               <img
                 alt="Your Company"
-                src="/src/client/assets/callLogo.png"
+                src="/src/guns/callLogo.png"
 
                 className="h-8 w-auto"
               />

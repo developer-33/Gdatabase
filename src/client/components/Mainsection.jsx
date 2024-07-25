@@ -145,7 +145,7 @@ const Mainsection = ( {toggleDarkMode, }) => {
           <Route  path="/login" element={<SignIn toggleDarkMode/>}  /> 
 
           <Route  path="/sniper" element={<SniperGuns toggleDarkMode />} />
-            <Route  path="/news"element={<News toggleDarkMode/> } />
+            <Route  path="/news" element={<News toggleDarkMode/> } />
              <Route path="/admindashboard" element={<AdminDashboard  toggleDarkMode/>}   />
              <Route path="/assault" element={<AssaultGuns toggleDarkMode/>}   />
               <Route path="/image" element={<ImageComponent toggleDarkMode/>} />

@@ -3,6 +3,8 @@ import ResponsiveGridWithMoreCards from './SniperRifels';
 
 
  function SniperGuns () {
+  
+ const heroBackgroundImage = '/src/guns/call2.webp';
   return (
     <div className='container'>
     <ResponsiveGridWithMoreCards />
