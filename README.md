@@ -9,6 +9,15 @@ Currently, two official plugins are available:
 # Gdatabase
 
 
+<script type="module" src="./src/client/assets/guns/117.png"></script>
+<script type="module" src="./src/client/assets/guns/ak-47.png"></script>
+<script type="module" src="./src/client/assets/guns/BK57.PNG"></script>
+<script type="module" src="./src/client/assets/guns/dr-h.png"></script>
+<script type="module" src="./src/client/assets/guns/fr.556.png"></script>
+<script type="module" src="./src/client/assets/guns/hbra3.png"></script>
+<script type="module" src="./src/client/assets/guns/hvk-30.png"></script>
+<script type="module" src="./src/client/assets/guns/ICR-1.PNG"></script>
+<script type="module" src="./src/client/assets/guns/kn44.png"></script>
 
 
 
